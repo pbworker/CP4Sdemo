@@ -29,7 +29,7 @@
                 "2": {
                     "name": "onographi.xml",
                     "hashes": {
-                        "SHA-1": "Ed006529ddd3d4ca60c6bcCAfAd76EEFd83EDC2A"
+                        "SHA-1": "b3b5d67f5bbf5a043f5bf5d079dbcb56"
                     },
                     "type": "file"
                 }
@@ -55,7 +55,7 @@
                 "2": {
                     "name": "ounger.at2",
                     "hashes": {
-                        "TLSH": "ba85050c3ac2dBB3FBcDbD2aD73D64A5c2DA22B4c0EAE4e457b1eEfCBcA1EAA55eE36E"
+                        "TLSH": "b3b5d67f5bbf5a043f5bf5d079dbcb56"
                     },
                     "type": "file"
                 }
@@ -211,7 +211,7 @@
                 "2": {
                     "name": "antere-hothouse.qe4",
                     "hashes": {
-                        "MD5": "Ca54E19B9A857cFDd569921C5Ab52ACD"
+                        "MD5": "b3b5d67f5bbf5a043f5bf5d079dbcb56"
                     },
                     "type": "file"
                 }
