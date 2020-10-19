@@ -29,7 +29,7 @@
                 "2": {
                     "name": "onographi.xml",
                     "hashes": {
-                        "SHA-1": "b3b5d67f5bbf5a043f5bf5d079dbcb56"
+                        "MD5": "b3b5d67f5bbf5a043f5bf5d079dbcb56"
                     },
                     "type": "file"
                 }
@@ -55,7 +55,7 @@
                 "2": {
                     "name": "ounger.at2",
                     "hashes": {
-                        "TLSH": "b3b5d67f5bbf5a043f5bf5d079dbcb56"
+                        "MD5": "b3b5d67f5bbf5a043f5bf5d079dbcb56"
                     },
                     "type": "file"
                 }
