@@ -36,7 +36,7 @@
                 },
                 "3": {
                     "type": "ipv4-addr",
-                    "value": "67.229.97.229",
+                    "value": "10.10.9.56",
                     "resolves_to_refs": "4"
                 },
                 "4": {
@@ -65,8 +65,8 @@
                 "category_name": "AWS CloudTrail Message",
                 "log_source_name": "AWS CloudTrail"
             },
-            "first_observed": "2020-10-16T16:42:58.140Z",
-            "last_observed": "2020-10-16T16:42:58.140Z",
+            "first_observed": "2020-10-16T05:44:58.140Z",
+            "last_observed": "2020-10-16T05:44:58.140Z",
             "number_observed": 1
         }
     ]
