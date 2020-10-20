@@ -3,7 +3,7 @@
     "spec_version": "2.0",
     "objects": [
         {
-            "name": "Guardium Test",
+            "name": "Qradar",
             "identity_class": "events",
             "type": "identity",
             "id": "identity--60c1ac18-06b9-41b4-bab8-8a0c1f3c783f",
