@@ -28,8 +28,8 @@
                 },
                 "2": {
                     "name": "SalesDB",
-                    "filename": {
-                        "type": "hate jsonB"
+                    "DBtype": {
+                        "type": "Oracle"
                     },
                     "type": "file"
                 },
