@@ -70,7 +70,7 @@
             "number_observed": 1
         },
         {
-            "type": "identity",
+            "type": "identity1",
             "id": "identity--f1654233-7b6a-4d77-89cc-33e66a10c541",
             "name": "QRadar",
             "identity_class": "events"
