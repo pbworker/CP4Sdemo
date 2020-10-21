@@ -27,8 +27,9 @@
                     "type": "user-account"
                 },
                 "2": {
-                    "name": "ccupancie.mtx",
-                    
+                    "name": "SalesDB",
+                    "filename": {
+                        "MD5": "d3ecca7ebb4c2f2Cf3dDA4a5c7bebA7ef77aF4Ac2A2b74EaE1cAd42B"
                     },
                     "type": "file"
                 },
@@ -48,16 +49,17 @@
             "modified": "2020-04-17T16:17:33.709Z",
             "objects": {
                 "0": {
-                    "value": "10.10.9.56",
+                    "value": "192.168.1.67",
                     "type": "ipv4-addr"
                 },
                 "1": {
-                    "user_id": "BADGUY",
+                    "user_id": "lagiarise",
                     "type": "user-account"
                 },
                 "2": {
                     "name": "wnin.uu",
-                    
+                    "hashes": {
+                        "SHA3-224": "D334cd27CeDe28Aa3Ccfecc949FF88EDdf6fd3C3Df4adf9aEAE6e5Cd"
                     },
                     "type": "file"
                 },
