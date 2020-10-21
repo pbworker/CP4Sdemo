@@ -7,7 +7,7 @@
         {
             "type": "identity",
             "id": "identity--28067052-21d2-429f-8582-b55bbfb4eca3",
-            "name": "QRadar",
+            "name": "Guardium",
             "identity_class": "events"
         },
         {
