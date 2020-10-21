@@ -1,205 +1,134 @@
 {
-    "id": "bundle--a1a69bde-7200-4e8f-a21c-623b0f18bfc6",
-    "spec_version": "2.0",
+    "type": "bundle",
+    "id": "bundle--abe952aa-b943-4a9d-98d4-c6c073b4e8dc",
     "objects": [
         {
-            "name": "Guardium",
-            "identity_class": "events",
             "type": "identity",
-            "id": "identity--0879cf32-1db2-4142-a1c8-974f1b773124",
-            "created": "2020-10-16T05:44:06.403Z",
-            "modified": "2020-10-16T05:44:06.403Z"
-        },
-        {
-            "id": "observed-data--961b30ed-1959-4262-875f-bb10a87ee9e7",
-            "number_observed": 1,
-            "first_observed": "2020-10-16T05:45:09.797106Z",
-            "last_observed": "2020-10-16T05:45:09.797106Z",
-            "created": "2020-10-16T05:45:09.797Z",
-            "modified": "2020-10-16T05:45:09.797Z",
+            "id": "identity--f165428c-7b6a-4d77-89cc-33e66a10c541",
+            "name": "Guardium",
+            "identity_class": "events"
+        },            
+            {
+            "id": "observed-data--81afa14f-5463-4251-83ba-4aac261a5ea1",
+            "type": "observed-data",
+            "created_by_ref": "identity--f165428c-7b6a-4d77-89cc-33e66a10c541",
+            "created": "2020-01-20T17:19:32.138Z",
+            "modified": "2020-01-20T17:19:32.138Z",
             "objects": {
                 "0": {
+                    "type": "ipv4-addr",
                     "value": "10.10.9.56",
-                    "type": "ipv4-addr"
+                    "resolves_to_refs": "2"
                 },
                 "1": {
-                    "user_id": "BADGUY",
-                    "type": "user-account"
-                }
-            },
-            "type": "observed-data"
-        },
-        {
-            "id": "observed-data--52f60a7c-7545-42f2-8a44-444cf8cf3efe",
-            "number_observed": 1,
-            "first_observed": "2020-10-16T17:32:42.24397Z",
-            "last_observed": "2020-10-16T17:32:42.24397Z",
-            "created": "2020-10-16T17:32:42.243Z",
-            "modified": "2020-10-16T17:32:42.243Z",
-            "objects": {
-                "0": {
-                    "value": "10.10.9.56",
-                    "type": "ipv4-addr"
+                    "type": "network-traffic",
+                    "src_ref": "0",
+                    "src_port": 0,
+                    "dst_ref": "3",
+                    "dst_port": 0,
+                    "protocols": [
+                        "reserved"
+                    ]
                 },
-                "1": {
-                    "user_id": "Luis",
-                    "type": "user-account"
-                }
-            },
-            "type": "observed-data"
-        },
-        {
-            "id": "observed-data--d651fc0d-d0f0-4a14-91e0-81727600d1f8",
-            "number_observed": 1,
-            "first_observed": "2020-10-16T06:49:56.19433Z",
-            "last_observed": "2020-10.16T06:49:56.19433Z",
-            "created": "2020-10.16T06:49:56.194Z",
-            "modified": "2020-10.16T06:49:56.194Z",
-            "objects": {
-                "0": {
-                    "value": "10.10.9.56",
-                    "type": "ipv4-addr"
+                "2": {
+                    "type": "mac-addr",
+                    "value": "00:00:00:00:00:00"
                 },
-                "1": {
-                    "user_id": "Luis",
-                    "type": "user-account"
-                }
-            },
-            "type": "observed-data"
-        },
-        {
-            "id": "observed-data--409bf8ff-cd58-4e3a-8ae5-e19d1c79a33a",
-            "number_observed": 1,
-            "first_observed": "2020-10-16T20:27:23.691181Z",
-            "last_observed": "2020-10-16T20:27:23.691181Z",
-            "created": "2020-10-16T20:27:23.691Z",
-            "modified": "2020-10-16T20:27:23.691Z",
-            "objects": {
-                "0": {
-                    "value": "10.10.9.30",
-                    "type": "ipv4-addr"
+                "3": {
+                    "type": "ipv4-addr",
+                    "value": "67.229.97.229",
+                    "resolves_to_refs": "4"
                 },
-                "1": {
-                    "user_id": "enner-yode",
-                    "type": "user-account"
-                }
-            },
-            "type": "observed-data"
-        },
-        {
-            "id": "observed-data--93cd9fde-e5d8-42d1-bf2c-c7b188ccf9bd",
-            "number_observed": 1,
-            "first_observed": "2020-09-05T16:46:28.415482Z",
-            "last_observed": "2020-09-05T16:46:28.415482Z",
-            "created": "2020-09-05T16:46:28.415Z",
-            "modified": "2020-09-05T16:46:28.415Z",
-            "objects": {
-                "0": {
-                    "value": "10.10.9.239",
-                    "type": "ipv4-addr"
+                "4": {
+                    "type": "mac-addr",
+                    "value": "00:00:00:00:00:00"
                 },
-                "1": {
-                    "user_id": "atrioti-searchlight",
-                    "type": "user-account"
-                }
-            },
-            "type": "observed-data"
-        },
-        {
-            "id": "observed-data--71d4daf0-2e7e-45e9-9c70-ec0f445cb625",
-            "number_observed": 1,
-            "first_observed": "2020-09-04T00:10:12.53765Z",
-            "last_observed": "2020-09-04T00:10:12.53765Z",
-            "created": "2020-09-04T00:10:12.537Z",
-            "modified": "2020-09-04T00:10:12.537Z",
-            "objects": {
-                "0": {
-                    "value": "10.10.9.56",
-                    "type": "ipv4-addr"
+                "5": {
+                    "type": "user-account",
+                    "user_id": "Luis"
                 },
-                "1": {
-                    "user_id": "BADGUY",
-                    "type": "user-account"
-                }
-            },
-            "type": "observed-data"
-        },
-        {
-            "id": "observed-data--8038d1ce-158b-4c03-b5a7-baf91b0f4ea4",
-            "number_observed": 1,
-            "first_observed": "2020-09-12T12:04:40.171771Z",
-            "last_observed": "2020-09-12T12:04:40.171771Z",
-            "created": "2020-09-12T12:04:40.171Z",
-            "modified": "2020-09-12T12:04:40.171Z",
-            "objects": {
-                "0": {
-                    "value": "10.10.9.177",
-                    "type": "ipv4-addr"
+                "6": {
+                    "type": "file",
+                    "name": "CustomerDataOctober"
                 },
-                "1": {
-                    "user_id": "ifeguar-splendidl-phototypesette",
-                    "type": "user-account"
-                }
-            },
-            "type": "observed-data"
-        },
-        {
-            "id": "observed-data--c4319afe-8447-47de-9720-ba105c10868b",
-            "number_observed": 1,
-            "first_observed": "2020-10-16T18:09:31.376017Z",
-            "last_observed": "2020-10-16T18:09:31.376017Z",
-            "created": "2020-10-16T18:09:31.376Z",
-            "modified": "2020-10-16T18:09:31.376Z",
-            "objects": {
-                "0": {
-                    "value": "10.10.9.233",
-                    "type": "ipv4-addr"
+                "9": {
+                    "type": "domain",
+                    "path": "s3.amazonaws.com"
                 },
-                "1": {
-                    "user_id": "ange",
-                    "type": "user-account"
+                "10": {
+                    "type": "artifact",
+                    "payload_bin": "localhost:accountId:911534260404,accessKeyId:ASIA5IO5NAC2OIBXQ4NY,userName:DanielJones,sessionContext:{attributes:{mfaAuthenticated:false,creationDate:2018-09-28T13:40:25Z}},invokedBy:Daniel},eventTime:2018-06-09T21:08:04Z,eventSource:s3.amazonaws.com,eventName:GetObject,awsRegion:us-west-2,sourceIPAddress:67.229.97.229,userAgent:[aws-cli/1.15.57 Python/2.7.14+ Linux/4.15.0-kali2-amd64 botocore/1.10.56],requestParameters:{X-Amz-Date:20180609T210803Z,bucketName:db_backups2032,response-content-disposition:inline,X-Amz-Algorithm:AWS4-HMAC-SHA256,X-Amz-SignedHeaders:host,X-Amz-Expires:300,key:fullDB_dump30102018.dump,responseElements:null,additionalEventData:{x-amz-id-2:aOFvDQjetBtTbrR6zfhmvFJEFS1dOdmSucSEVzd70yIwpLg6pSCalFewtoVchOzcSLKQswDjlAQ=},requestID:4D551A01693DE04D,eventID:73de1499-c6d0-4faa-84b3-f19f607a7a8d,readOnly:true,resources:[{type:AWS::S3::Object,ARN:arn:aws:s3:::mystorage2007/fullDB_dump30102018.dump},{accountId:911534260404,type:AWS::S3::Bucket,ARN:arn:aws:s3:::db_backups2032}],eventType:AwsApiCall,recipientAccountId:911534260404"
                 }
             },
-            "type": "observed-data"
-        },
-        {
-            "id": "observed-data--77f491b2-05a6-4ffc-b050-b6dd2d9b0b42",
-            "number_observed": 1,
-            "first_observed": "2020-07-17T00:13:56.826934Z",
-            "last_observed": "2020-07-17T00:13:56.826934Z",
-            "created": "2020-07-17T00:13:56.826Z",
-            "modified": "2020-07-17T00:13:56.826Z",
-            "objects": {
-                "0": {
-                    "value": "10.10.9.4",
-                    "type": "ipv4-addr"
-                },
-                "1": {
-                    "user_id": "itroge",
-                    "type": "user-account"
-                }
+            "x_com_ibm_ariel": {
+                "qid_name": "Object Downloaded",
+                "category_name": "AWS CloudTrail Message",
+                "log_source_name": "AWS CloudTrail"
             },
-            "type": "observed-data"
-        },
-        {
-            "id": "observed-data--fa695d3c-ffe5-4ede-a486-65d27f146648",
-            "number_observed": 1,
-            "first_observed": "2020-08-31T15:01:38.219441Z",
-            "last_observed": "2020-08-31T15:01:38.219441Z",
-            "created": "2020-08-31T15:01:38.219Z",
-            "modified": "2020-08-31T15:01:38.219Z",
-            "objects": {
-                "0": {
-                    "value": "10.10.9.72",
-                    "type": "ipv4-addr"
-                },
-                "1": {
-                    "user_id": "escendant-especia-steep",
-                    "type": "user-account"
-                }
-            },
-            "type": "observed-data"
+            "first_observed": "2020-01-20T16:42:58.140Z",
+            "last_observed": "2020-01-20T16:42:58.140Z",
+            "number_observed": 1
         }
-    ],
-    "type": "bundle"
+        {
+            "id": "observed-data--8ssfa14f-5463-4251-83ba-4aac261a5ea1",
+            "type": "observed-data",
+            "created_by_ref": "identity--f165428c-7b6a-4d77-89cc-33e66a10c541",
+            "created": "2020-01-20T17:19:32.138Z",
+            "modified": "2020-01-20T17:19:32.138Z",
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "10.10.9.56",
+                    "resolves_to_refs": "2"
+                },
+                "1": {
+                    "type": "network-traffic",
+                    "src_ref": "0",
+                    "src_port": 0,
+                    "dst_ref": "3",
+                    "dst_port": 0,
+                    "protocols": [
+                        "reserved"
+                    ]
+                },
+                "2": {
+                    "type": "mac-addr",
+                    "value": "00:00:00:00:00:00"
+                },
+                "3": {
+                    "type": "ipv4-addr",
+                    "value": "67.229.97.229",
+                    "resolves_to_refs": "4"
+                },
+                "4": {
+                    "type": "mac-addr",
+                    "value": "00:00:00:00:00:00"
+                },
+                "5": {
+                    "type": "user-account",
+                    "user_id": "BADGUY"
+                },
+                "6": {
+                    "type": "file",
+                    "name": "SalesDB"
+                },
+                "9": {
+                    "type": "domain",
+                    "path": "Guardium"
+                },
+                "10": {
+                    "type": "artifact",
+                    "payload_bin": "localhost:accountId:911534260404,accessKeyId:ASIA5IO5NAC2OIBXQ4NY,userName:DanielJones,sessionContext:{attributes:{mfaAuthenticated:false,creationDate:2018-09-28T13:40:25Z}},invokedBy:Daniel},eventTime:2018-06-09T21:08:04Z,eventSource:s3.amazonaws.com,eventName:GetObject,awsRegion:us-west-2,sourceIPAddress:67.229.97.229,userAgent:[aws-cli/1.15.57 Python/2.7.14+ Linux/4.15.0-kali2-amd64 botocore/1.10.56],requestParameters:{X-Amz-Date:20180609T210803Z,bucketName:db_backups2032,response-content-disposition:inline,X-Amz-Algorithm:AWS4-HMAC-SHA256,X-Amz-SignedHeaders:host,X-Amz-Expires:300,key:fullDB_dump30102018.dump,responseElements:null,additionalEventData:{x-amz-id-2:aOFvDQjetBtTbrR6zfhmvFJEFS1dOdmSucSEVzd70yIwpLg6pSCalFewtoVchOzcSLKQswDjlAQ=},requestID:4D551A01693DE04D,eventID:73de1499-c6d0-4faa-84b3-f19f607a7a8d,readOnly:true,resources:[{type:AWS::S3::Object,ARN:arn:aws:s3:::mystorage2007/fullDB_dump30102018.dump},{accountId:911534260404,type:AWS::S3::Bucket,ARN:arn:aws:s3:::db_backups2032}],eventType:AwsApiCall,recipientAccountId:911534260404"
+                }
+            },
+            "x_com_ibm_ariel": {
+                "qid_name": "Object Downloaded",
+                "category_name": "Oracle SalesDB",
+                "log_source_name": "Oracle SalesDB"
+            },
+            "first_observed": "2020-01-20T16:42:58.140Z",
+            "last_observed": "2020-01-20T16:42:58.140Z",
+            "number_observed": 1
+        }
+    ]
 }
