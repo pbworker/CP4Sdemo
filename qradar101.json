@@ -36,7 +36,7 @@
                 },
                 "3": {
                     "type": "ipv4-addr",
-                    "value": "192.168.0.8",
+                    "value": "10.10.9.56",
                     "resolves_to_refs": "4"
                 },
                 "4": {
