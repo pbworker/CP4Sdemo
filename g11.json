@@ -28,7 +28,7 @@
                 },
                 "2": {
                     "name": "SalesDB",
-                    "DBtype": {
+                    "type": {
                         "type": "Oracle"
                     },
                     "type": "file"
