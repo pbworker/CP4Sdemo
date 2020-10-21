@@ -1,134 +1,165 @@
 {
-    "type": "bundle",
-    "id": "bundle--abe952aa-b943-4a9d-98d4-c6c073b4e8dc",
+    "id": "bundle--24f16b8c-233d-4f44-b19a-7111bacc532f",
+    "spec_version": "2.0",
     "objects": [
         {
+            "name": "Guardium",
+            "identity_class": "events",
             "type": "identity",
-            "id": "identity--f165428c-7b6a-4d77-89cc-33e66a10c541",
-            "name": "QRadar",
-            "identity_class": "events"
-        },            
-            {
-            "id": "observed-data--81afa14f-5463-4251-83ba-4aac261a5ea1",
-            "type": "observed-data",
-            "created_by_ref": "identity--f165428c-7b6a-4d77-89cc-33e66a10c541",
-            "created": "2020-01-20T17:19:32.138Z",
-            "modified": "2020-01-20T17:19:32.138Z",
-            "objects": {
-                "0": {
-                    "type": "ipv4-addr",
-                    "value": "10.10.9.56",
-                    "resolves_to_refs": "2"
-                },
-                "1": {
-                    "type": "network-traffic",
-                    "src_ref": "0",
-                    "src_port": 0,
-                    "dst_ref": "3",
-                    "dst_port": 0,
-                    "protocols": [
-                        "reserved"
-                    ]
-                },
-                "2": {
-                    "type": "mac-addr",
-                    "value": "00:00:00:00:00:00"
-                },
-                "3": {
-                    "type": "ipv4-addr",
-                    "value": "67.229.97.229",
-                    "resolves_to_refs": "4"
-                },
-                "4": {
-                    "type": "mac-addr",
-                    "value": "00:00:00:00:00:00"
-                },
-                "5": {
-                    "type": "user-account",
-                    "user_id": "DanielJones"
-                },
-                "6": {
-                    "type": "file",
-                    "name": "CustomerDataOctober"
-                },
-                "9": {
-                    "type": "domain",
-                    "path": "s3.amazonaws.com"
-                },
-                "10": {
-                    "type": "artifact",
-                    "payload_bin": "localhost:accountId:911534260404,accessKeyId:ASIA5IO5NAC2OIBXQ4NY,userName:DanielJones,sessionContext:{attributes:{mfaAuthenticated:false,creationDate:2018-09-28T13:40:25Z}},invokedBy:Daniel},eventTime:2018-06-09T21:08:04Z,eventSource:s3.amazonaws.com,eventName:GetObject,awsRegion:us-west-2,sourceIPAddress:67.229.97.229,userAgent:[aws-cli/1.15.57 Python/2.7.14+ Linux/4.15.0-kali2-amd64 botocore/1.10.56],requestParameters:{X-Amz-Date:20180609T210803Z,bucketName:db_backups2032,response-content-disposition:inline,X-Amz-Algorithm:AWS4-HMAC-SHA256,X-Amz-SignedHeaders:host,X-Amz-Expires:300,key:fullDB_dump30102018.dump,responseElements:null,additionalEventData:{x-amz-id-2:aOFvDQjetBtTbrR6zfhmvFJEFS1dOdmSucSEVzd70yIwpLg6pSCalFewtoVchOzcSLKQswDjlAQ=},requestID:4D551A01693DE04D,eventID:73de1499-c6d0-4faa-84b3-f19f607a7a8d,readOnly:true,resources:[{type:AWS::S3::Object,ARN:arn:aws:s3:::mystorage2007/fullDB_dump30102018.dump},{accountId:911534260404,type:AWS::S3::Bucket,ARN:arn:aws:s3:::db_backups2032}],eventType:AwsApiCall,recipientAccountId:911534260404"
-                }
-            },
-            "x_com_ibm_ariel": {
-                "qid_name": "Object Downloaded",
-                "category_name": "AWS CloudTrail Message",
-                "log_source_name": "AWS CloudTrail"
-            },
-            "first_observed": "2020-01-20T16:42:58.140Z",
-            "last_observed": "2020-01-20T16:42:58.140Z",
-            "number_observed": 1
-        }
+            "id": "identity--ff86895b-53b0-4efd-882e-d44f696e11ea",
+            "created": "2020-08-31T17:13:50.667Z",
+            "modified": "2020-08-31T17:13:50.667Z"
+        },
         {
-            "id": "observed-data--21afa14f-5463-4251-83ba-4aac261a5ea1",
-            "type": "observed-data",
-            "created_by_ref": "identity--f265428c-7b6a-4d77-89cc-33e66a10c541",
-            "created": "2020-01-20T17:19:32.138Z",
-            "modified": "2020-01-20T17:19:32.138Z",
+            "id": "observed-data--1234a320-c74f-4190-b1b1-7aa5ba1fe213",
+            "number_observed": 1,
+            "first_observed": "2020-05-29T01:17:20.97363Z",
+            "last_observed": "2020-05-29T01:17:20.97363Z",
+            "created": "2020-05-29T01:17:20.973Z",
+            "modified": "2020-05-29T01:17:20.973Z",
             "objects": {
                 "0": {
-                    "type": "ipv4-addr",
-                    "value": "10.10.9.56",
-                    "resolves_to_refs": "2"
+                    "value": "192.168.1.64",
+                    "type": "ipv4-addr"
                 },
                 "1": {
-                    "type": "network-traffic",
-                    "src_ref": "0",
-                    "src_port": 0,
-                    "dst_ref": "3",
-                    "dst_port": 0,
-                    "protocols": [
-                        "reserved"
-                    ]
+                    "user_id": "ort",
+                    "type": "user-account"
                 },
                 "2": {
-                    "type": "mac-addr",
-                    "value": "00:00:00:00:00:00"
+                    "name": "ccupancie.mtx",
+                    "hashes": {
+                        "SHA3-224": "d3ecca7ebb4c2f2Cf3dDA4a5c7bebA7ef77aF4Ac2A2b74EaE1cAd42B"
+                    },
+                    "type": "file"
                 },
                 "3": {
-                    "type": "ipv4-addr",
-                    "value": "67.229.97.229",
-                    "resolves_to_refs": "4"
-                },
-                "4": {
-                    "type": "mac-addr",
-                    "value": "00:00:00:00:00:00"
-                },
-                "5": {
-                    "type": "user-account",
-                    "user_id": "DanielJones"
-                },
-                "6": {
-                    "type": "file",
-                    "name": "CustomerDataOctober"
-                },
-                "9": {
-                    "type": "domain",
-                    "path": "s3.amazonaws.com"
-                },
-                "10": {
-                    "type": "artifact",
-                    "payload_bin": "localhost:accountId:911534260404,accessKeyId:ASIA5IO5NAC2OIBXQ4NY,userName:DanielJones,sessionContext:{attributes:{mfaAuthenticated:false,creationDate:2018-09-28T13:40:25Z}},invokedBy:Daniel},eventTime:2018-06-09T21:08:04Z,eventSource:s3.amazonaws.com,eventName:GetObject,awsRegion:us-west-2,sourceIPAddress:67.229.97.229,userAgent:[aws-cli/1.15.57 Python/2.7.14+ Linux/4.15.0-kali2-amd64 botocore/1.10.56],requestParameters:{X-Amz-Date:20180609T210803Z,bucketName:db_backups2032,response-content-disposition:inline,X-Amz-Algorithm:AWS4-HMAC-SHA256,X-Amz-SignedHeaders:host,X-Amz-Expires:300,key:fullDB_dump30102018.dump,responseElements:null,additionalEventData:{x-amz-id-2:aOFvDQjetBtTbrR6zfhmvFJEFS1dOdmSucSEVzd70yIwpLg6pSCalFewtoVchOzcSLKQswDjlAQ=},requestID:4D551A01693DE04D,eventID:73de1499-c6d0-4faa-84b3-f19f607a7a8d,readOnly:true,resources:[{type:AWS::S3::Object,ARN:arn:aws:s3:::mystorage2007/fullDB_dump30102018.dump},{accountId:911534260404,type:AWS::S3::Bucket,ARN:arn:aws:s3:::db_backups2032}],eventType:AwsApiCall,recipientAccountId:911534260404"
+                    "value": "CC:46:D6:b2:d0:1d",
+                    "type": "mac-addr"
                 }
             },
-            "x_com_ibm_ariel": {
-                "qid_name": "Object Downloaded",
-                "category_name": "AWS CloudTrail Message",
-                "log_source_name": "AWS CloudTrail"
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--70ccbf68-5358-4c43-ab26-8421ebdf7688",
+            "number_observed": 1,
+            "first_observed": "2020-04-17T16:17:33.709367Z",
+            "last_observed": "2020-04-17T16:17:33.709367Z",
+            "created": "2020-04-17T16:17:33.709Z",
+            "modified": "2020-04-17T16:17:33.709Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.67",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "user_id": "lagiarise",
+                    "type": "user-account"
+                },
+                "2": {
+                    "name": "wnin.uu",
+                    "hashes": {
+                        "SHA3-224": "D334cd27CeDe28Aa3Ccfecc949FF88EDdf6fd3C3Df4adf9aEAE6e5Cd"
+                    },
+                    "type": "file"
+                },
+                "3": {
+                    "value": "CC:46:D6:83:6d:8b",
+                    "type": "mac-addr"
+                }
             },
-            "first_observed": "2020-01-20T16:42:58.140Z",
-            "last_observed": "2020-01-20T16:42:58.140Z",
-            "number_observed": 1
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--e2c4b2d6-842f-4df4-a276-f3c11be46b05",
+            "number_observed": 1,
+            "first_observed": "2020-07-04T09:45:34.060446Z",
+            "last_observed": "2020-07-04T09:45:34.060446Z",
+            "created": "2020-07-04T09:45:34.060Z",
+            "modified": "2020-07-04T09:45:34.060Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.52",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "user_id": "ubis-adipos-instille",
+                    "type": "user-account"
+                },
+                "2": {
+                    "name": "lum.kmz",
+                    "hashes": {
+                        "SHA-384": "79216Ed6c6FA97062c6Dd6964eBefcC538BB7892Fdb05aebd4fFcdEA5Afb7B9F128751Dbc2EFaBBa660C4AD6d2bdc1EB"
+                    },
+                    "type": "file"
+                },
+                "3": {
+                    "value": "CC:46:D6:a8:60:51",
+                    "type": "mac-addr"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--2724e394-298c-4e76-b9a7-c798ec806130",
+            "number_observed": 1,
+            "first_observed": "2020-05-24T12:13:45.946677Z",
+            "last_observed": "2020-05-24T12:13:45.946677Z",
+            "created": "2020-05-24T12:13:45.946Z",
+            "modified": "2020-05-24T12:13:45.946Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.114",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "user_id": "owke-synthetic",
+                    "type": "user-account"
+                },
+                "2": {
+                    "name": "erspicuousl-recant.bbl",
+                    "hashes": {
+                        "ssdeep": "vxMjEN"
+                    },
+                    "type": "file"
+                },
+                "3": {
+                    "value": "CC:46:D6:5a:8a:01",
+                    "type": "mac-addr"
+                }
+            },
+            "type": "observed-data"
+        },
+        {
+            "id": "observed-data--07f8d4be-57af-4db1-b983-0fcf246b4a60",
+            "number_observed": 1,
+            "first_observed": "2020-06-14T17:40:46.100956Z",
+            "last_observed": "2020-06-14T17:40:46.100956Z",
+            "created": "2020-06-14T17:40:46.100Z",
+            "modified": "2020-06-14T17:40:46.100Z",
+            "objects": {
+                "0": {
+                    "value": "192.168.1.203",
+                    "type": "ipv4-addr"
+                },
+                "1": {
+                    "user_id": "alt-etche",
+                    "type": "user-account"
+                },
+                "2": {
+                    "name": "irstborn.rs_",
+                    "hashes": {
+                        "SHA-256": "cb5eD6326c9DC48fBA1d3fD8c56d2b8ece939CcAa3Bc4Db7C0f88E777DAbab8e"
+                    },
+                    "type": "file"
+                },
+                "3": {
+                    "value": "CC:46:D6:6d:4c:14",
+                    "type": "mac-addr"
+                }
+            },
+            "type": "observed-data"
         }
-    ]
+    ],
+    "type": "bundle"
 }
