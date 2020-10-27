@@ -4,6 +4,6 @@
 - Data assets:
 -CAR asset data
 - Guardium STIXX bundle
-- QRadar STIXX bundleg
+- QRadar STIXX bundle
  
  (C) Sonia & Piotr
