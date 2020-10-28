@@ -7,6 +7,6 @@ Data assets:
 - Guardium STIXX bundle
 - QRadar STIXX bundle
 
-Diamond Model framework with SOAR were proposed by (C)Zsolt Kocsis
+Diamond Model framework with SOAR were build based on (C)Zsolt Kocsis metodology
  
  (C) Sonia & Piotr
