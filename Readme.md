@@ -6,5 +6,7 @@ Data assets:
 - CAR asset data
 - Guardium STIXX bundle
 - QRadar STIXX bundle
+
+Diamond Model framework with SOAR were proposed by (C)Zsolt Kocsis
  
  (C) Sonia & Piotr
