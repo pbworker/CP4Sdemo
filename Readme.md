@@ -9,6 +9,6 @@ Data assets:
 /n
 - Video: https://ibm.box.com/s/hva2z5cgpzd3qadcqotwl3ml6tdx7692
 
-> Diamond Model framework with SOAR were build based on (C) Zsolt Kocsis metodology
+> Diamond Model framework with SOAR was build based on (C) Zsolt Kocsis metodology
  
  (C) Sonia & Piotr
