@@ -23,6 +23,16 @@
             "modified": 1597707126.125459,
             "first_occurrence": 1597707126.125459,
             "last_occurrence": 1597707126.125459
+        },
+        {
+            "external_id": "account_10053",
+            "name": "Mike Person",
+            "created": 1597707126.125459,
+            "active": true,
+            "compliance_status": true,
+            "modified": 1597707126.125459,
+            "first_occurrence": 1597707126.125459,
+            "last_occurrence": 1597707126.125459
         }
 ],
 "user": [
@@ -42,6 +52,23 @@
             "last_occurrence": 1597707126.125459,
             "external_id": "user_10051",
             "name": "Luis Mandela"
+        },
+        {
+            "fullname": "Person, Mike",
+            "job_title": "Administrator",
+            "email": "MikeP@powerplant.com",
+            "description": " Administrator ",
+            "family_name": "Person",
+            "given_name": "Mike",
+            "title": " Administrator ",
+            "employee_id": "10053",
+            "active": true,
+            "department": "IT",
+            "modified": 1597707126.125459,
+            "first_occurrence": 1597707126.125459,
+            "last_occurrence": 1597707126.125459,
+            "external_id": "user_10053",
+            "name": "Mike Person"
         }
 ],
     "user_account": [
@@ -52,6 +79,14 @@
             "active": true,
             "_from_external_id": "user_10051",
             "_to_external_id": "account_10051"
+        },
+        {
+            "created": 1597707126.125459,
+            "report": "Report1",
+            "source": "Source1",
+            "active": true,
+            "_from_external_id": "user_10053",
+            "_to_external_id": "account_10053"
         }
 ],
 "asset": [
@@ -59,10 +94,71 @@
             "name": "Luis_laptop_192",
             "external_id": "Luis_laptop_192",
             "business_value": 50,
-            "risk": 0.0,
+            "risk": 2.0,
+            "description": "",
+            "asset_type": "Laptop"
+        },
+        {
+            "name": "Mike_Person_laptop",
+            "external_id": "Mike_Person_laptop",
+            "business_value": 30,
+            "risk": 3.0,
             "description": "",
             "asset_type": "Laptop"
         }
+],
+"vulnerability":[
+{
+	 "name":"Linux Kernel namespace privilege escalation",
+	 "external_id":"vul1234",
+	"base_score":6
+	},
+{
+	 "name":"CVE-2014-9114 - util-linux - Command Injection Issue",
+	 "external_id":"vul5678",
+	"base_score":6
+	},
+{
+	 "name":"CVE-2020-1472 - Microsoft Netlogon Vulnerability CVE-2020-1472 Potential Exploit ",
+	 "external_id":"vul1472",
+	"base_score":6
+	}
+],
+	"ipaddress_vulnerability":[
+{
+	"_from": "ipaddress/192.168.0.10",
+   	"_to_external_id":"vul1234",
+   	"timestamp": 1597707126.125459,
+    "active": true,
+    "report": "Report1",
+    "source": "Source1"
+	},
+	{
+	"_from": "ipaddress/10.10.9.56",
+   	"_to_external_id":"vul1472",
+   	"timestamp": 1597707126.125459,
+    "active": true,
+    "report": "Report1",
+    "source": "Source1"
+	}
+],
+"asset_vulnerability":[
+{
+  "_from_external_id":"Luis_laptop_192",
+  "_to_external_id":"vul1472",
+  "timestamp": 1597707126.125459,
+   "active": true,
+   "report": "Report1",
+   "source": "Source1"
+	},
+   {
+  "_from_external_id":"Mike_Person_laptop",
+  "_to_external_id":"vul5678",
+  "timestamp": 1597707126.125459,
+   "active": true,
+   "report": "Report1",
+   "source": "Source1"
+	}
 ],
     "asset_account": [
         {
@@ -72,11 +168,22 @@
             "active": true,
             "_from_external_id": "Luis_laptop_192",
             "_to_external_id": "account_10051"
+        },
+        {
+            "created": 1597707126.125459,
+            "report": "Report1",
+            "source": "Source1",
+            "active": true,
+            "_from_external_id": "Mike_Person_laptop",
+            "_to_external_id": "account_10053"
         }
 ],
     "hostname": [
         {
             "_key": "Luis_laptop_192.example.org"
+        },
+       {
+            "_key": "Mike_Person_laptop.nucplant.org"
         }
 ],
     "account_hostname": [
@@ -87,11 +194,22 @@
             "active": true,
             "_from_external_id": "account_10051",
             "_to": "hostname/Luis_laptop_192.example.org"
+        },
+        {
+            "created": 1597707126.125459,
+            "report": "Report1",
+            "source": "Source1",
+            "active": true,
+            "_from_external_id": "account_10053",
+            "_to": "hostname/Mike_Person_laptop.nucplant.org"
         }
 ],
     "ipaddress": [
         {
             "_key": "10.10.9.56"
+        },
+       {
+            "_key": "192.168.0.10"
         }
 ],
     "account_ipaddress": [
@@ -102,6 +220,14 @@
             "active": true,
             "_from_external_id": "account_10051",
             "_to": "ipaddress/10.10.9.56"
+        },
+        {
+            "created": 1597707126.125459,
+            "report": "Report1",
+            "source": "Source1",
+            "active": true,
+            "_from_external_id": "account_10053",
+            "_to": "ipaddress/192.168.0.10"
         }
 ],
     "asset_ipaddress": [
@@ -112,11 +238,22 @@
             "active": true,
             "_from_external_id": "Luis_laptop_192",
             "_to": "ipaddress/10.10.9.56"
+        },
+       {
+            "created": 1597707126.125459,
+            "report": "Report1",
+            "source": "Source1",
+            "active": true,
+            "_from_external_id": "Mike_Person_laptop",
+            "_to": "ipaddress/192.168.0.10"
         }
 ],
     "macaddress": [
         {
             "_key": "c0:00:00:00:27:43"
+        },
+       {
+            "_key": "D1:5F:57:1C:37:41"
         }
 ],
     "asset_macaddress": [
@@ -127,6 +264,14 @@
             "active": true,
             "_from_external_id": "Luis_laptop_192",
             "_to": "macaddress/c0:00:00:00:27:43"
+        },
+       {
+            "created": 1597707126.125459,
+            "report": "Report1",
+            "source": "Source1",
+            "active": true,
+            "_from_external_id": "Mike_Person_laptop",
+            "_to": "macaddress/D1:5F:57:1C:37:41"
         }
 ],
     "ipaddress_macaddress": [
@@ -137,6 +282,14 @@
             "active": true,
             "_from": "ipaddress/10.10.9.56",
             "_to": "macaddress/c0:00:00:00:27:43"
+        },
+       {
+            "created": 1597707126.125459,
+            "report": "Report1",
+            "source": "Source1",
+            "active": true,
+            "_from": "ipaddress/191.168.0.10",
+            "_to": "macaddress/D1:5F:57:1C:37:41"
         }
 ],
     "application": [
