@@ -77,6 +77,7 @@
 	"x_ibm_finding":{ 
 		"name":"PII Objects - Alert preceded by Unauthorized Users",
 		"description":"PII Objects - Alert preceded by Unauthorized Users"
+		}
 	},
         {
             "id": "observed-data--439c662d-5ddd-453f-afe4-1d00faf87531",
