@@ -78,11 +78,6 @@
 		"name":"PII Objects - Alert preceded by Unauthorized Users",
 		"description":"PII Objects - Alert preceded by Unauthorized Users"
 	},
-	"type": "identity",
-            "id": "identity--f165428c-7b6a-4d77-89cc-33e66a10c541",
-            "name": "QRadar",
-            "identity_class": "events"
-        },
         {
             "id": "observed-data--439c662d-5ddd-453f-afe4-1d00faf87531",
             "type": "observed-data",
