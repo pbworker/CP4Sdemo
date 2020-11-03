@@ -9,6 +9,8 @@ Data assets:
 - QRadar STIXX bundle
 - Video: https://ibm.box.com/s/dpsq9jw91kc2i7653fj09qjfegqw2xic2
 
+ (C) Sonia & Piotr
+
 > Diamond Model framework with SOAR was build based on (C) Zsolt Kocsis metodology
  
- (C) Sonia & Piotr
+
