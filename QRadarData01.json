@@ -42,6 +42,7 @@
 		}
 	},
 	"x_ibm_ariel":{
+		"utf8_payload": "PII Objects - Alert preceded by Unauthorized Users",
 		"event_name":"PII Objects - Alert preceded by Unauthorized Users",
 		"qid":67502118,
 		"category_name":"Unauthorized Access Attempt",
