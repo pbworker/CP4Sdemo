@@ -42,7 +42,6 @@
 		}
 	},
 	"x_ibm_ariel":{
-		"utf8_payload": "PII Objects - Alert preceded by Unauthorized Users",
 		"event_name":"PII Objects - Alert preceded by Unauthorized Users",
 		"qid":67502118,
 		"category_name":"Unauthorized Access Attempt",
@@ -72,13 +71,96 @@
 		"domain_id":0,
 		"domain_name":"Default Domain"
 		},
-	"first_observed":"2020-10-16T05:44:14.164Z",
-	"last_observed":"2020-10-16T07:44:00.164Z",
+	"first_observed":"2020-10-16T03:44:14.164Z",
+	"last_observed":"2020-10-16T03:44:00.164Z",
 	"number_observed":1,
 	"x_ibm_finding":{ 
 		"name":"PII Objects - Alert preceded by Unauthorized Users",
 		"description":"PII Objects - Alert preceded by Unauthorized Users"
+	},
+	"type": "identity",
+            "id": "identity--f165428c-7b6a-4d77-89cc-33e66a10c541",
+            "name": "QRadar",
+            "identity_class": "events"
+        },
+        {
+            "id": "observed-data--439c662d-5ddd-453f-afe4-1d00faf87531",
+            "type": "observed-data",
+            "created_by_ref": "identity--f165428c-7b6a-4d77-89cc-33e66a10c541",
+            "created": "2020-10-16T17:19:31.981Z",
+            "modified": "2020-10-16T17:19:31.981Z",
+            "objects": {
+                "0": {
+                    "type": "ipv4-addr",
+                    "value": "10.10.9.56",
+                    "resolves_to_refs": "2"
+                },
+                "1": {
+                    "type": "network-traffic",
+                    "src_ref": "0",
+                    "src_port": 0,
+                    "dst_ref": "3",
+                    "dst_port": 0,
+                    "protocols": [
+                        "reserved"
+                    ]
+                },
+                "2": {
+                    "type": "mac-addr",
+                    "value": "c0:00:00:00:27:43"
+                },
+                "3": {
+                    "type": "ipv4-addr",
+                    "value": "10.10.9.56",
+                    "resolves_to_refs": "4"
+                },
+                "4": {
+                    "type": "mac-addr",
+                    "value": "c0:00:00:00:27:43"
+                },
+                "5": {
+                    "type": "user-account",
+                    "user_id": "Luis"
+                },
+                "6": {
+                    "type": "artifact",
+                    "payload_bin": "PDE4Mj5PY3QgMTQgMTk6NTc6NTkgMTkyLjE2OC4wLjkwIDwxMz5PY3QgMDMgMTQ6NTM6MzUgV2lu\nU2VydmVyIEFnZW50RGV2aWNlPVdpbmRvd3NMb2cJQWdlbnRMb2dGaWxlPU1pY3Jvc29mdC1XaW5k\nb3dzLVN5c21vbi9PcGVyYXRpb25hbAlQbHVnaW5WZXJzaW9uPTcuMi44LjE0NQlTb3VyY2U9TWlj\ncm9zb2Z0LVdpbmRvd3MtU3lzbW9uCUNvbXB1dGVyPVdpblNlcnZlcglPcmlnaW5hdGluZ0NvbXB1\ndGVyPVdpblNlcnZlcglVc2VyPVNZU1RFTQlEb21haW49TlQgQVVUSE9SSVRZCUV2ZW50SUQ9MQlF\ndmVudElEQ29kZT0xCUV2ZW50VHlwZT00CUV2ZW50Q2F0ZWdvcnk9MQlSZWNvcmROdW1iZXI9OTQy\nMTQJVGltZUdlbmVyYXRlZD0xNTcwMTEwODEzCVRpbWVXcml0dGVuPTE1NzAxMTA4MTMJTGV2ZWw9\nSW5mb3JtYXRpb25hbAlLZXl3b3Jkcz0weDgwMDAwMDAwMDAwMDAwMDAJVGFzaz1TeXNtb25UYXNr\nLVNZU01PTl9DUkVBVEVfUFJPQ0VTUwlPcGNvZGU9SW5mbwlNZXNzYWdlPVByb2Nlc3MgQ3JlYXRl\nOiBSdWxlTmFtZTogIFV0Y1RpbWU6IDIwMTktMTAtMDMgMTM6NTM6MzMuNTM4IFByb2Nlc3NHdWlk\nOiB7MUMyRDNGNTQtRkQ1RC01RDk1LTAwMDAtMDAxMEEwMkUwQzAwfSBQcm9jZXNzSWQ6IDc1NyBJ\nbWFnZTogQzpcUHJvZ3JhbSBGaWxlc1xBdGxhc3NpYW5cQ29uZmx1ZW5jZVxjNjQuZXhlIENvbW1h\nbmRMaW5lOiBjNjQuZXhlIGY2NC5kYXRhICI5ODM5RDdGMUEwIC1tIiBDdXJyZW50RGlyZWN0b3J5\nOiBDOlxXaW5kb3dzXCBVc2VyOiBXaW5TZXJ2ZXJcYWRtaW4gTG9nb25HdWlkOiB7MUMyRDNGNTQt\nRjczNS01RDk1LTAwMDAtMDAyMDk0NkQwNDAwfSBMb2dvbklkOiAweDQ2ZDk0IFRlcm1pbmFsU2Vz\nc2lvbklkOiAxIEludGVncml0eUxldmVsOiBIaWdoIEhhc2hlczogU0hBMT01YmY2Yzk4YTUyZTgw\nODI0ZDFhMjM0YmQ1ZTY3M2VkYjc1YzdkZGE5LE1ENT04NDZjZGI5MjE4NDFhYzY3MWM4NjM1MGQ0\nOTRhYmY5YyxTSEEyNTY9ZGM1MmJkZjVlM2Y3MWZiOWFiM2IxNzMwZDQ0NTI4N2QxNmQzYTNjOA=="
+                },
+                "7": {
+                    "type": "file",
+                    "hashes": {
+                        "MD5": "b3b5d67f5bbf5a043f5bf5d079dbcb56"
+                    },
+                    "name": "deployBackDoor.xls",
+                    "parent_directory_ref": "9"
+                },
+                "8": {
+                    "type": "process",
+                    "name": "c64.exe",
+                    "binary_ref": "7",
+                    "command_line": "deployBackDoor.xls f64.data \"9839D7F1A0 -m\"",
+                    "pid": 757
+                },
+                "9": {
+                    "type": "directory",
+                    "path": "C:\\Program Files\\Atlassian\\Confluence\\deployBackDoor.xls"
+                }
+            },
+            "x_com_ibm_ariel": {
+                "devicetype": 12,
+                "qid_name": "Process Create backdoor",
+                "qid": 5001828,
+                "category_name": "Create Activity Succeeded    ",
+                "category_id": 19012,
+                "log_source_id": 1912,
+                "log_source_name": "Sysmon @ 10.10.9.56",
+                "identity_ip": "0.0.0.0",
+                "utf8_payload": "<182>Jan 03 19:57:59 10.10.9.56 <13>Jan 03 14:53:35 WinServer AgentDevice=WindowsLog\tAgentLogFile=Microsoft-Windows-Sysmon/Operational\tPluginVersion=7.2.8.145\tSource=Microsoft-Windows-Sysmon\tComputer=WinServer\tOriginatingComputer=WinServer\tUser=SYSTEM\tDomain=NT AUTHORITY\tEventID=1\tEventIDCode=1\tEventType=4\tEventCategory=1\tRecordNumber=94214\tTimeGenerated=1570110813\tTimeWritten=1570110813\tLevel=Informational\tKeywords=0x8000000000000000\tTask=SysmonTask-SYSMON_CREATE_PROCESS\tOpcode=Info\tMessage=Process Create: RuleName:  UtcTime: 2020-10-16 13:53:33.538 ProcessGuid: {1C2D3F54-FD5D-5D95-0000-0010A02E0C00} ProcessId: 757 Image: C:\\Program Files\\Atlassian\\Confluence\\c64.exe CommandLine: c64.exe f64.data \"9839D7F1A0 -m\" CurrentDirectory: C:\\Windows\\ User: BADGUY LogonGuid: {1C2D3F54-F735-5D95-0000-0020946D0400} LogonId: 0x46d94 TerminalSessionId: 1 IntegrityLevel: High Hashes: SHA1=5bf6c98a52e80824d1a234bd5e673edb75c7dda9,MD5=846cdb921841ac671c86350d494abf9c,SHA256=dc52bdf5e3f71fb9ab3b1730d445287d16d3a3c8",
+                "magnitude": 2
+            },
+            "first_observed": "2020-10-16T23:58:00.151Z",
+            "last_observed": "2020-10-16T23:58:00.151Z",
+            "number_observed": 1
 	}
-}
 ]
 }
