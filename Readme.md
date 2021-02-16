@@ -7,7 +7,7 @@ Data assets:
 - CAR asset data
 - Guardium STIXX bundle
 - QRadar STIXX bundle
-- Video: https://ibm.box.com/s/dpsq9jw91kc2i7653fj09qjfegqw2xic2
+- Video: https://app.goconsensus.com/play/68401421
 
  (C) Sonia & Piotr
 
